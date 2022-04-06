@@ -185,6 +185,7 @@ body {
   color: var(--color-dark-grayish-blue);
   margin-bottom: 1rem;
   line-height: 1.2;
+  font-weight: 700;
 }
 
 .desc {
@@ -242,6 +243,85 @@ body {
   cursor: pointer;
 }
 
+.socials {
+  width: 12rem;
+  height: 1rem;
+  padding: 1rem 2rem;
+  background-color: var(--color-dark-grayish-blue);
+  border-radius: 10px;
+  position: absolute;
+  right: 0;
+  bottom: 90px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 3;
+  display: none;
+}
+
+.social-heading {
+  letter-spacing: 5px;
+  color: var(--color-light-blue);
+  text-transform: uppercase;
+}
+
+#triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 30px solid var(--color-dark-grayish-blue);
+  position: absolute;
+  right: 50px;
+  bottom: 75px;
+  display: none;
+}
+
 /* ========================================= */
 /* END OF GENERAL STYLING */
 /* ========================================= */
+
+/* ========================================= */
+/* MEDIA QUERIES */
+/* ========================================= */
+
+@media (max-width: 1200px) {
+  .container {
+    min-height: 20rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    min-height: 25rem;
+  }
+  .share {
+    width: 10%;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    grid-template-columns: 100%;
+    min-height: 50rem;
+  }
+
+  .main-img {
+    height: 80%;
+  }
+
+  .user {
+    width: 80%;
+    bottom: 0;
+  }
+
+  .michelle {
+    width: 20%;
+    height: 30%;
+    border-radius: 50%;
+  }
+
+  .share {
+    width: 10%;
+    height: 20%;
+  }
+}
