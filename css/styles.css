@@ -255,7 +255,6 @@ body {
   display: flex;
   justify-content: space-between;
   z-index: 3;
-  display: none;
 }
 
 .social-heading {
@@ -264,7 +263,7 @@ body {
   text-transform: uppercase;
 }
 
-#triangle-down {
+.triangle-down {
   width: 0;
   height: 0;
   border-left: 20px solid transparent;
@@ -273,7 +272,6 @@ body {
   position: absolute;
   right: 50px;
   bottom: 75px;
-  display: none;
 }
 
 /* ========================================= */
@@ -323,5 +321,14 @@ body {
   .share {
     width: 10%;
     height: 20%;
+  }
+
+  .socials {
+    width: 84%;
+    bottom: 0px;
+  }
+
+  .triangle-down {
+    display: none;
   }
 }
